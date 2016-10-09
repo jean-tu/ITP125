@@ -37,3 +37,61 @@
 
 ##Linux
 * **Linux** - open-source operating system 
+
+
+#BOOT PROCESSES 
+##POST 
+* POST = Power-on Self Test 
+* It is performed by the firmware after the device has been turned on 
+* There are LED lights that would indicate if there was a problem while trying to boot up 
+* The OS only loads after the POST system and pre-boot sequence has finished 
+
+##Post Functions 
+* Verify the integrity of BIOS 
+* Verify system memory and size 
+* Verify CPU
+* Discover, initialize, and catalog all system buses and device
+* Identify, organize, and select which devices are available for booting 
+* Provide a user interface for the system's configuration 
+
+##BIOS
+**BIOS** - Basic Input/Output System 
+
+* BIOS is a type of firmware that happens during the booting process
+* Only used by PC's (Mac's use something else) 
+* The purpose is to load an operating system from the boot device
+* Each BIOs is specifically designed to work with a particular mother model 
+* Stored on flash memory chip on motherboard 
+
+##UEFI 
+* **UEFI** - Unified Extensible Firmware Interface 
+* Specification that describes a software interface between firmware and an operating system 
+* Replaces the BIOS  
+* This is also used in Macs 
+* Advantage of using this over BIOS is the ability to boot from larger disks, it's CPU dependent and it has the ability to support network capabilities 
+
+#Pieces of a computer 
+* Motherboard It's the main board that holds all of the pieces together to 
+* Central Processing Unit CPU - does the work of the computer, it carries out the little instructions and operations 
+* Random Access Memory RAM - volatile storage (the information will be lost when the device shuts off), allows data to be accessed in the same time and location as the memory, and it is fast temporary storage 
+* Hard Drive - used for storing data on disks, but there is also the option of using SSD's as an alternative to hard drives 
+* Solid State Drive SSD - uses flash memory 
+
+#Operating Systems 
+* It is the software that manipulates hardware so that the users do not have to 
+* It manages the hardware and software resources 
+	* Memory management 
+	* CPU & Processor management
+	* Input & output 
+	* File management 
+	* Networking 
+	* Command Interpreter 
+* Real Time Operating Systems (RTOS) - operating systems that is not based on manual user input & output but pre-programmed behaviors 
+
+#Definitions
+* **Program** - executable code 
+* **Process** - single instance of a program 
+* **Thread** - smallest unit of processing that can be scheduled 
+
+##Kernel 
+* 
