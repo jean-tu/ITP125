@@ -94,4 +94,27 @@
 * **Thread** - smallest unit of processing that can be scheduled 
 
 ##Kernel 
+* Manager of resources 
+	* Manages the input/output requests from software and translates them to data processing instructions for the CPU and other hardware 
+	* Assigns space to processes 
+* Mechanism for inter-process communication 
+
+##Mutli-tasking vs Multi-Processing 
+* **Multi-task** - being able to have multiple process running at the same time 
+	* The kernel gives each task a certain amount of time  and then switch back and forth between processes
+* **Multi-Processing** - Allowing processes to execute on multiple cores 
+
+##Memory Management 
+* Each process has its own designated address space for memory 
+* Kernel is responsible for allowing processes to use memory in a safe manner, by not overwriting each other 
+* **Paging** (virtual memory) 
+	* Lets the memory to be swapped if there is NOT enough RAM to hold everything that is trying to be stored 
+
+##Interrupts 
+* Helps hardware/software to signal to processor that an event needs immediate attention 
+* Executes an interrupt handler to deal with the event 
+* **Hardware interrupts:** Devices used to communicate with the processor 
+* **Software Interrupt:** used when software needs to interact with hardware 
 * 
+ 	
+##Execution Modes
