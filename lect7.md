@@ -39,4 +39,4 @@
 * Email from friends who have been affected 
 * Malicious websites 
 * Websites that have been infected
-* Computers on the infected network 	
+* Computers on the infected network 	c
