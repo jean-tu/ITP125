@@ -23,4 +23,6 @@
 ##Social Engineering Playbook 
 * Research - gather as much information on the victim/pool 
 * Hook - attacker will make initial move to contact the victim and begin a script 
-* Play - build the **TRUST**
+* Play - build the **TRUST** to find out additional information about them 
+	* The more risky the information, the more trust you will need to have 
+* Exit - end the communication without arousing suspicion  
