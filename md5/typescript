@@ -1,0 +1,13 @@
+Script started on Mon Nov 28 22:29:32 2016
+[?1034hbash-3.2$ 
+bash-3.2$ apm install script
+Installing script to /Users/jeantu/.atom/packages ls
+[32m✓
+[39mbash-3.2$ ls
+md5.py        md5.pyc       passwords.txt typescript
+bash-3.2$ ls
+md5.py        md5.pyc       passwords.txt typescript
+bash-3.2$ ls[K[Kexit
+exit
+
+Script done on Mon Nov 28 22:36:17 2016
