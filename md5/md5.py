@@ -2,21 +2,25 @@ import hashlib
 from datetime import datetime # to be able to time the functions
 #Generating the code to read in from the file
 
-#ask the user for the file with the information that is supposed to be read in
+def guessPass(hashedPass):
+    
+    print('hashed', hashedPass)
+
+
+
+
+
+#main function
 md5 = hashlib.md5
 #open up the file
-passwords = open('passwords.txt', 'r') #'r' to make it a read only
-line = passwords.readline()
-startTime = datetime.now().time()
-startTime_Second = float(str(startTime.second))
-startTime_Milli = float(str(startTime.microsecond))
-print(startTime_Second)
+passwords = open('hash.txt', 'r') #'r' to make it a read only
+line = passwords.readline().rstrip() #grabbing the first string to guess
 while line != "":
-    print(line, hashlib.md5(line.encode('utf-8')).hexdigest()) #hashing the password string
-    line = passwords.readline()
-endTime = datetime.now().time()
-endTime_Second = float(str(endTime.second))
-endTime_Milli = float(str(endTime.microsecond))
+    print(line)
+    guessPass(line) #call on the function to do the hashing
+    #print(line, hashlib.md5(line.encode('utf-8')).hexdigest()) #hashing the password string
+    line = passwords.readline().rstrip()
+
 
 
 if startTime_Second - endTime_Second > 0:
