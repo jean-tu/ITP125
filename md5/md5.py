@@ -1,76 +1,65 @@
 import hashlib
 import itertools
+import string
 from datetime import datetime # to be able to time the functions
 #Generating the code to read in from the file
 
 '''Defining the Global Variables'''
+startTime_Minute = 0.0
 startTime_Second  = 0.0
-startTime_Milli = 0.0
+endTime_Minute = 0.0
 endTime_Second = 0.0
-endTime_Milli = 0.0
 index = 0 # to keep track of the place
 characters = 1 # to know of how many characters the string should have, starting w/ 1
-alphabetSpecial = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,./<>?;:!@#$%^&*()"
+alphabetSpecial = string.printable
 md5 = hashlib.md5
 
-def startTimer():
+def startTimer(): #updating the global variables for the startTime in seconds
     startTime = datetime.now().time()
-    global startTime_Second, startTime_Milli #import the global values to be able to modify them
+    global startTime_Minute, startTime_Second #import the global values to be able to modify them
+    startTime_Minute = float(str(startTime.minute))
     startTime_Second = float(str(startTime.second))
-    startTime_Milli = float(str(startTime.microsecond))
-    print(" start Timer " + str(startTime_Second) + " " + str(startTime_Milli))
+    #print " start Timer " + str(startTime_Minute) + " . " + str(startTime_Second)
 
-def endTimer():
+def endTimer():#updating the global variables for the endTime in seconds
     endTime = datetime.now().time()
-    global endTime_Second, endTime_Milli
+    global endTime_Minute, endTime_Second
+    endTime_Minute = float(str(endTime.minute))
     endTime_Second = float(str(endTime.second))
-    endTime_Milli = float(str(endTime.microsecond))
-    print(" end timer " + str(endTime_Second) + " " + str(endTime_Milli))
+    #print " end timer " + str(endTime_Minute) + " . " + str(endTime_Second)
 
-def guessPassHelper(guessed, hashedPass):
-    global alphabetSpecial
-    print guessed + " " + hashlib.md5(guessed.encode()).hexdigest()
-    if hashlib.md5(guessed.encode()).hexdigest() == hashedPass:
-        print "FOUND " + hashlib.md5(guessed.encode()).hexdigest()
-        return #you've found the hash
-    else:
-        perms =  list(map("".join, itertools.permutations(alphabetSpecial, characters))) #list(itertools.permutations(alphabetSpecial, 2))
-    for per in perms:
-        if hashlib.md5(per.encode()).hexdigest() == hashedPass:
-            print "FOUND " + per +  " " + hashlib.md5(per.encode()).hexdigest()
-            return #you've found the hash
-
+def totalTime():
+    global startTime_Second, endTime_Second
+    if endTime_Minute - startTime_Minute > 0:
+        minuteDifference = endTime_Minute - startTime_Minute
+        minuteDifference = minuteDifference*60 #converting it to seconds
+        if endTime_Second - startTime_Second > 0:
+            secondDifference = (endTime_Second - startTime_Second) + minuteDifference
+            print "Total TIme" + str(secondDifference)
+    elif endTime_Second - startTime_Second > 0:
+            print "Total Time: " + str(endTime_Second - startTime_Second)
+    else: #if there was no time difference
+        print "Time = 0 seconds"
 
 def guessPass(hashedPass):
     global alphabetSpecial, characters
     startTimer()      #call on start timer to grab time
-    print('hashed', hashedPass)
-    perms =  list(map("".join, itertools.permutations(alphabetSpecial, characters))) #list(itertools.permutations(alphabetSpecial, 2))
+    perms =  list(map("".join, itertools.permutations(alphabetSpecial, characters))) #generate all the permutations for the number of characters
     for per in perms:
         if hashlib.md5(per.encode()).hexdigest() == hashedPass:
-            print "FOUND " + per +  " " + hashlib.md5(per.encode()).hexdigest()
+            print "FOUND THE WORD: " + per +  " WITH THE HASH " + hashlib.md5(per.encode()).hexdigest()
+            endTimer()
+            totalTime()
             return #you've found the hash
-    endTimer()
-    #guessed = alphabetSpecial[index]
-    #guessPassHelper(guessed, hashedPass) #calling on the helper function
-
-
-
+    endTimer() #end the timer even if it's not able to find the word 
 
 #main function
 #open up the file
 passwords = open('hash.txt', 'r') #'r' to make it a read only
 line = passwords.readline().rstrip() #grabbing the first string to guess
 while line != "":
-    print line + " " + str(characters)
     guessPass(line) #call on the function to do the hashing
     line = passwords.readline().rstrip()
-    if startTime_Second - endTime_Second > 0:
-        print("Seconds" + str(startTime_Second - endTime_Second))
-    print str(endTime_Milli) + " " + str(startTime_Milli)
-    if endTime_Milli - startTime_Milli > 0:
-        print("MicroSEC " + str(endTime_Milli - startTime_Milli))
     print(" ") #line with nothing so it's more clear
     characters += 1 # to know how many words to work up to the next gues
-#close the file
-passwords.close()
+passwords.close() #close the file
