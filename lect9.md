@@ -1,11 +1,11 @@
-#Lecture 9: Enterprise Security 
+# Lecture 9: Enterprise Security 
 
-##Lollipop Model 
+## Lollipop Model 
 * Perimeter security - building virtual walls around everything of value 
 * But there are no levels of security 
 * Once someone has figured out how to get through, then they have access to everything 
 
-##Onion Model 
+## Onion Model 
 * The layered security architecture must be peeled away by an attacker 
 * **Rings of Trust** 
 	* Some communications are to be trusted completely, others not so much, and some not at all 
@@ -32,7 +32,6 @@
 * Enforce a passwords policy 
 * Content filtering 
 	* Whitelisting  
-* 
 
 	
 

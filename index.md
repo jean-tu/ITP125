@@ -1,4 +1,4 @@
-#Index (Table of Contents)
+# Index for all of the ITP 125 Lectures 
 
 Lectures:
 
@@ -9,3 +9,6 @@ Lectures:
 * Lecture 5: Networking II
 * Lecture 6: Advanced Networking
 * Lecture 7: Midterm Review 
+* Lecture 8: Social Engineering 
+* Lecture 9: Enterprise Security 
+* Lecture 10: Digital Forensics 

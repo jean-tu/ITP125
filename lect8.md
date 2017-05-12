@@ -1,4 +1,4 @@
-#Lecture 8: Social Engineering 
+# Lecture 8: Social Engineering 
 
 * Basic Human Tendencies 
 	* **Reciprocity** - try to repay what another person has given to you 
