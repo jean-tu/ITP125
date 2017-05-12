@@ -1,13 +1,13 @@
-#Lecture 1: Introduction 
+# Lecture 1: Introduction 
 
-##History of Information Security 
+## History of Information Security 
 * 1960's - DoD’s Advanced Research Project Agency (ARPA) started what we refer to today as the "internet" within the military to exchange information 
 * MULTICS (Multiplexed Information and Computing Service) was the first operating system created with security as its goal -­ now obsolete
 * UNIX -­ primary purpose was text processing and had less security
 * 1990's - computers were connected through LANs (Local Access Network) 
 
 
-##Cyberattacks Today 
+## Cyberattacks Today 
 * In 2011, RSA was breached 
 * 2013 Target was attacked 
 * 2014 Sony Pictures Entertainment was Hacked 
@@ -31,13 +31,13 @@ Types of Security:
 * Doesn't really generate any revenue or reduce any cost 
 * It cannot guarantee security 
 
-##Breach Summary 
+## Breach Summary 
 * Breaches are normally detected in 49 - 80 days 
 * Breaches are often detected by an outsider first
 * On average it takes 83-123 days to respond to a breach 
 * Average security breaches cost $32,469 per day before it gets resolved 
 
-##Aspects of Security 
+## Aspects of Security 
 * CIA Triangle 
 	* **Confidentiality** - only those that should have access will be able to have access to the information 
 		* On a need to know basis 
@@ -54,7 +54,7 @@ Types of Security:
 * **Authorization** - assurance that the user has been specifically and explicitly authorized by the proper authority to access, update, or delete the contents of an information asset 
 * **Accountability** - when a control provides assurance that every activity undertaken can be attributed to named a person or automated process 
 
-##Threat vs. Attacks 
+## Threat vs. Attacks 
 
 * **Threat** - potential violation of security 
 	* Doesn't have to already have happened 
@@ -66,12 +66,12 @@ Types of Security:
 	* 	Examples: Snooping (wire tapping), modification, spoofing, delay, denial of service (dos) 
 * **Attack** - actions that take advantage of potential threats  	
 
-##Goals of Security 
+## Goals of Security 
 * **Prevention** - stop the attack from happening 
 * **Detection** - know when the attack is happening 
 * **Recovery** - stop, assess, repair, and maintain functionality during the attack
 
-##How do attackers gain access? 
+## How do attackers gain access? 
 * Vulnerabilities
 	* Technical vulnerabilities 
 		*  Use secure software, make sure to check for updates, and vulnerability 
