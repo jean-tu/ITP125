@@ -1,13 +1,13 @@
-#Lecture 4: Networking Basics 
+# Lecture 4: Networking Basics 
 
-##Topologies 
+## Topologies 
 * **Physical topology** - way physical components of the network are arranged (how we humans see the network) 
 * **Logical topology** - how hosts on the network interact with each other 
 
 **Bus Topology**
 
 - Every component is connected to a single line with "taps" for each component 
-- ADvantages: quick to deploy & cheap 
+- Advantages: quick to deploy & cheap 
 - Disadvantage: lots of collisions, unreliable, a break causes the rest of the network to fail
 
 **Ring Topology**
@@ -30,14 +30,14 @@
 
 ![Image of the Topologies](images/topologies.png)
 
-##Ethernet Collisions 
+## Ethernet Collisions 
 * Ethernet cables = full duplex 
 	* they send and receive data simultaneously 
 * Half duplex - only send OR receive 
 * Collisions occur when there are two hosts that try to use the connection at the same time 
 * CSMA/CD - method for detecting collisions before they occur 
 
-#OSI Model 
+# OSI Model 
 * Wanted to create a universal standard for networking 
 * Layers 
 ![OSI Layers](images/OSILayers.png)
@@ -61,7 +61,7 @@ Layer 2 - MAC addressing
 
 Layer 1 - how data gets transmitted onto the wire, binary 
 
-##Addressing 
+## Addressing 
 * MAC - Unique hardware address for a network interface & should never change 
 * IP address - assigned address within a network 
 	* Public IP address - purchased from the Internet Service Providers (ISPs) 

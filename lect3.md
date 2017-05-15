@@ -1,17 +1,17 @@
-#Lecture 3: Security Tactics & Encryption 
+# Lecture 3: Security Tactics & Encryption 
 
-##Review
+## Review
 
 
-##What are we securing? 
+## What are we securing? 
 * Network - series of computers that are connected together for the purpose of sharing resources and data 
 * Host - individual system on a network 
 * Internet - series of interconnected networks that spans the entire world 
 
-##Host Security 
+## Host Security 
 * Operating system - base software on a system that manages the system's resources for the user and programs
 
-##Security Tactics 
+## Security Tactics 
 * **Least Access Principle** - making sure that someone only has access to what they need and nothing else 
 * **Layered Security**
 	* Having multiple layers of security 
@@ -25,7 +25,7 @@
 	* Do not have a server perform more than 1 task, keep the tasks of the servers separated 
 * **Access Control** - controlling the permissions of an individual 
 
-##Security Mechanisms 
+## Security Mechanisms 
 * **Encryption** 
 	* ***Symmetric encryption*** - use the same key for encryption and decryption 
 		* The key is shared between both parties 
