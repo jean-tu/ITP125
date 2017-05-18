@@ -1,6 +1,6 @@
-#Lecture 5: Networking II 
+# Lecture 5: Networking II 
 
-##3 way handshake 
+## 3 way handshake 
 * Establish a reliable connection 
 * Sender sends SYN (synchronize) to the receiver saying what port it wants to connect to and the sequence number of the sender's first packet 
 * Receiver sends back an acknowledgement saying that it is ready for the sender to send the packet
@@ -15,7 +15,7 @@ They control how much information gets sent based off of how busy the receiving 
 * If they are idle, then the window will be bigger 
 * The window size is included in the header information for the packet 
 
-##TCP/IP Model 
+## TCP/IP Model 
 * This model is not OSI compliant 
 * 4 Layers 
 	* Application 
@@ -24,11 +24,11 @@ They control how much information gets sent based off of how busy the receiving 
 	* Network Interface 
 ![Chart listing the differences between OSI and TCP/IP](images/osivtcpip.png)
 
-#UDP 
+# UDP 
 * Focuses on speed 
 * Used for time synchronization, gaming, streaming, VoIP   
 
-##ICMP 
+## ICMP 
 * Internet Control Message Protocol - used by network devices to send error messages
 * Less commonly used than TCP & UDP 
 * Designed to send small packages over a small bandwidth 
