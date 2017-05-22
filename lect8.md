@@ -9,7 +9,7 @@
 	* **Liking** - complying with people we like 
 	* **Authority** - complying with authority figures 
 
-##Telltale Signs 
+## Telltale Signs 
 * Pretends to know some publicly available information about you 
 	* When there is a stranger that says that they know a friend of yours or that they know where you go to school or something like that 
 * Will try to warn you/induce fear 
@@ -20,7 +20,7 @@
 * Provide information meant to appear official but not verified 
 	* Someone pretending to be the IRS    
 
-##Social Engineering Playbook 
+## Social Engineering Playbook 
 * Research - gather as much information on the victim/pool 
 * Hook - attacker will make initial move to contact the victim and begin a script 
 * Play - build the **TRUST** to find out additional information about them 
