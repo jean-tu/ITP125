@@ -1,21 +1,21 @@
-#Lect 7: Malware 
+# Lecture 7: Malware 
 
-##Malware 
+## Malware 
 * Short for malicious software 
 
 
-##Anti-virus (AV) 
+## Anti-virus (AV) 
 * Running it is better than not
 * It works to find **KNOWN** versions 
 * There can be multiple versions if the person decides to change the file output 
 
 
-##Types of Malware 
+## Types of Malware 
 * Viruses 
 * Trojans 
 * Worms - hardest to get rid of 
 
-##Categories of Malware
+## Categories of Malware
 * Spyware 
 * Adware
 * Scareware
@@ -33,7 +33,7 @@
 	* can have a GUI that makes it easy for the hacker to gain complete access 
 
 	
-##How do you get malware 
+## How do you get malware 
 * USB's 
 * Spam e-mails with links/attachments 
 * Email from friends who have been affected 
